@@ -11,6 +11,8 @@
 		EABE1FDA2A5C49BD00BC0E40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1FD92A5C49BD00BC0E40 /* ContentView.swift */; };
 		EABE1FDC2A5C49BE00BC0E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABE1FDB2A5C49BE00BC0E40 /* Assets.xcassets */; };
 		EABE1FE02A5C49BE00BC0E40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABE1FDF2A5C49BE00BC0E40 /* Preview Assets.xcassets */; };
+		EABE1FE82A5C4A5900BC0E40 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1FE72A5C4A5900BC0E40 /* WeatherAPIClient.swift */; };
+		EABE1FEA2A5C4A7500BC0E40 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1FE92A5C4A7500BC0E40 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		EABE1FDB2A5C49BE00BC0E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EABE1FDD2A5C49BE00BC0E40 /* WeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherApp.entitlements; sourceTree = "<group>"; };
 		EABE1FDF2A5C49BE00BC0E40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EABE1FE72A5C4A5900BC0E40 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		EABE1FE92A5C4A7500BC0E40 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		EABE1FD62A5C49BD00BC0E40 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				EABE1FE62A5C4A4100BC0E40 /* WeatherAPIClient */,
 				EABE1FD72A5C49BD00BC0E40 /* WeatherAppApp.swift */,
 				EABE1FD92A5C49BD00BC0E40 /* ContentView.swift */,
 				EABE1FDB2A5C49BE00BC0E40 /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				EABE1FDF2A5C49BE00BC0E40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EABE1FE62A5C4A4100BC0E40 /* WeatherAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EABE1FE72A5C4A5900BC0E40 /* WeatherAPIClient.swift */,
+				EABE1FE92A5C4A7500BC0E40 /* WeatherModel.swift */,
+			);
+			path = WeatherAPIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABE1FE82A5C4A5900BC0E40 /* WeatherAPIClient.swift in Sources */,
 				EABE1FDA2A5C49BD00BC0E40 /* ContentView.swift in Sources */,
+				EABE1FEA2A5C4A7500BC0E40 /* WeatherModel.swift in Sources */,
 				EABE1FD82A5C49BD00BC0E40 /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +283,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is required to use this app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -303,6 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is required to use this app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
